@@ -1,6 +1,6 @@
-=====================================
-ColossalCyberAdventureMessages README
-=====================================
+==============================
+ColossalCyberAdventureMessages
+==============================
 
 :Author: Yael Eliraz
 :Author: Uri Goldfinger
