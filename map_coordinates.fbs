@@ -1,0 +1,8 @@
+namespace Messages;
+
+include "map_coordinate.fbs";
+
+struct MapCoordinates {
+	x:MapCoordinate;
+	y:MapCoordinate;
+}

@@ -1,0 +1,20 @@
+namespace Messages;
+
+include "map_coordinates.fbs";
+
+table LogInFailure {
+	ban:bool = false;
+}
+
+table LogInSuccess {
+	coordinates:MapCoordinates;
+	health:float;
+}
+
+union _LogInResponse { LogInFailure, LogInSuccess }
+
+table LogInResponse {
+	response:_LogInResponse;
+}
+
+root_type LogInResponse;
