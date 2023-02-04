@@ -1,0 +1,4 @@
+dist
+
+colossalcyberadventure/*.py
+!colossalcyberadventure/__init__.py

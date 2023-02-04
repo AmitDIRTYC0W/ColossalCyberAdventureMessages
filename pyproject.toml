@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "colossalcyberadventuremessages"
+version = "0.1.0"
+description = ""
+authors = ["Amit Goren <animalfarm@mailfence.com>"]
+readme = "README.rst"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.build]
+script = "build.py"
+generate-setup-file = false
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
