@@ -1,4 +1,4 @@
 dist
 
-colossalcyberadventure/*.py
-!colossalcyberadventure/__init__.py
+colossalcyberadventuremessages/*.py
+!colossalcyberadventuremessages/__init__.py
