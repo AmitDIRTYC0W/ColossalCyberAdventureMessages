@@ -14,6 +14,6 @@ ColossalCyberAdventureMessages
    :depth: 3
 ..
 
-This repository contains FlatBuffers schemas of the messages transferred
+This repository contains Protocol Buffers schemas of the messages transferred
 between clients and servers. Messages between the servers use different
 schemas, not in this repository.

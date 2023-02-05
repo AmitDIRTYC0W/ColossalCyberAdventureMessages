@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+import "map_coordinates.proto";
+
+package ccam;
+
+message LogInRequest {
+  string username = 1;
+  string password = 2;
+}
+
+message LogInResponse {
+  message Failure {
+    bool ban = 1;
+  }
+
+  message Success {
+    MapCoordinates coordinates = 1;
+    float health = 2;
+  }
+
+  oneof status {
+    Failure failure = 1;
+    Success success = 2;
+  }
+}
