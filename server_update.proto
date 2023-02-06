@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+import "map_vector.proto";
+
+package ccam;
+
+message ServerTransfer {
+  
+}
+
+message InsertEntity {
+  
+}
+
+message RemoveEntity {
+  
+}
+
+message MoveEntity {
+  
+}
+
+message UpdateEntity {
+  uint32 uid = 1;
+  float health = 2;
+}
+
+message EntityUpdate {
+  message Entity {
+    enum EntityType {
+      PLAYER = 0;
+      MELEE_ENEMY = 1;
+    }
+  }
+}
