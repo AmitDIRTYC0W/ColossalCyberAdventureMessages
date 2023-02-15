@@ -1,25 +1,23 @@
 @0xbdc27dbda2233e98;
 
-using import "log_in_request_msg.capnp".LogInRequest;
-
 struct LogInRequest {
   username @0 :Text;
   password @1 :Text;
 }
 
 struct LogInResponse {
+  enum FailureReason {
+    invalidCredentials @0;
+    userAlreadyLoggedIn @1;
+    userBanned @2;
+  }
+
   union {
     faliure :group {
-      reason @0 :Reason;
-
-      enum Reason {
-        invalid_credentials @0;
-        user_already_logged_in @1;
-        user_banned @2;
-      }
+      reason @0 :FailureReason;
     }
     success :group {
-      servers @0 :List(UInt64);
+      servers @1 :List(UInt64);
     }
   }
 }
