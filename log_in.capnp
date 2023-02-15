@@ -1,3 +1,5 @@
+@0xbdc27dbda2233e98;
+
 using import "log_in_request_msg.capnp".LogInRequest;
 
 struct LogInRequest {
