@@ -1,3 +1,0 @@
-struct MapCoordinate {
-	value:float;
-}

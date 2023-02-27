@@ -1,6 +1,0 @@
-table LogInRequest {
-  username:string;
-  password:string;
-}
-
-root_type LogInRequest;
