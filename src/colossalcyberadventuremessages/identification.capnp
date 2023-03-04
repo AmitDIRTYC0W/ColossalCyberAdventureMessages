@@ -17,7 +17,7 @@ struct IdentificationResponse {
     faliure :group {
       reason @0 :FailureReason;
     }
-    success :Void;
+    success @1 :Void;
   }
 }
 
