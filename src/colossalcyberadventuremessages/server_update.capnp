@@ -1,4 +1,4 @@
-@0xd291577ed19870fa;
+@0x978147d748ecac24
 
 struct ServerChatMessage {
   username @0 :Text;

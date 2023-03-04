@@ -1,4 +1,4 @@
-@0xd291577ed19870fa;
+@0xc08688c2018dbb99
 
 struct ClientChatMessage {
   contents @0 :Text;
