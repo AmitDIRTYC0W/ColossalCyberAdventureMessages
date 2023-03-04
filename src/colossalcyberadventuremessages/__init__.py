@@ -10,7 +10,8 @@ def load(filename: str):
     return capnp.load(str(PurePath(__file__).parent.joinpath(filename)))
 
 identification = load('identification.capnp')
-updates = load('updates.capnp')
+client_update = load('client_update.capnp')
+server_update = load('server_update.capnp')
 
 del load
 del PurePath
