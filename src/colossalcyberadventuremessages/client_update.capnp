@@ -4,7 +4,7 @@ struct ClientChatMessage {
   contents @0 :Text;
 }
 
-strcut ClientMovement {
+struct ClientMovement {
   x @0 :Float32;
   y @1 :Float32;
 }
