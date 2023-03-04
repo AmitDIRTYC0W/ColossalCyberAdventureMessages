@@ -17,9 +17,7 @@ struct IdentificationResponse {
     faliure :group {
       reason @0 :FailureReason;
     }
-    success :group {
-      servers @1 :List(UInt64);
-    }
+    success :Void;
   }
 }
 
