@@ -14,7 +14,7 @@ struct IdentificationResponse {
   }
 
   union {
-    faliure :group {
+    failure :group {
       reason @0 :FailureReason;
     }
     success @1 :Void;
