@@ -10,10 +10,15 @@ struct ServerMovement {
     y @1: Float32;
 }
 
+struct EntitiesUpdate {
+    todo: implement
+}
 struct ServerUpdate {
   union {
     chatMessage @0 :ServerChatMessage;
     delme @1 :Void;
     movement @2 :ServerMovement;
+    entitiesUpdate @3 :EntitiesUpdate;
   }
 }
+
