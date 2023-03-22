@@ -11,7 +11,6 @@ struct ServerUpdate {
     x @1 :Float32;
     y @2 :Float32;
   }
-}
 
   union {
     chatMessage @0 :ChatMessage;
