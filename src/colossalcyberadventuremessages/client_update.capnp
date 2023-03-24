@@ -9,6 +9,10 @@ struct ClientMovement {
   y @1 :Float32;
 }
 
+struct ClientShot {
+   angle @0 :Float32;
+}
+
 struct ClientUpdate {
   union {
     chatMessage @0 :ClientChatMessage;
