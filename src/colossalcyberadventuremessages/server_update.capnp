@@ -12,9 +12,9 @@ struct EntityUpdate {
 }
 
 struct BulletsUpdate {
-  id @0 :UInt16;
   x @1 :Float32;
   y @2 :Float32;
+  angle @3 :Float16;
 }
 
 struct ServerUpdate {

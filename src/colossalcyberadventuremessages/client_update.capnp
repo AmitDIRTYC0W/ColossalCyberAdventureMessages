@@ -10,7 +10,7 @@ struct ClientMovement {
 }
 
 struct ClientShot {
-   angle @0 :UInt 8
+   angle @0 :Float16;
 
 }
 
