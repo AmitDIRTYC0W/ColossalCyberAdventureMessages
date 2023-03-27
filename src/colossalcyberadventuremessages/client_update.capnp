@@ -1,33 +1,30 @@
 @0xc08688c2018dbb99;
 
-struct ClientChatMessage {
+struct ChatMessage {
   contents @0 :Text;
 }
 
-struct ClientMovement {
+struct Move {
   x @0 :Float32;
   y @1 :Float32;
 }
 
-struct ClientShot {
+struct Shot {
   angle @0 :Float16;
 }
 
-struct Weapon {
-  weaponUID @0 :UInt16;
-}
-
-struct Skill {
-  skill @0 :Void;
+enum Weapon {
+  gun @0;
+  sniper @1;
+  shotgun @2;
 }
 
 struct ClientUpdate {
   union {
-    chatMessage @0 :ClientChatMessage;
-    movement @1 :ClientMovement;
-    shot @2 :ClientShot;
-    disconnect @3 :Void;
-    currentWeapon @4 :Weapon;
-    skillActivated @5 :Skill;
+    chatMessage @0 :ChatMessage;
+    move @1 :Move;
+    shot @2 :Shot;
+    changeWeapon @3 :Weapon;
+    useSkill @4 :UInt8;
   }
 }
