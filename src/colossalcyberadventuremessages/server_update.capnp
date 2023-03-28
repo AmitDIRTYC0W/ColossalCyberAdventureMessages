@@ -12,18 +12,18 @@ struct EntityUpdate {
 }
 
 struct BulletsUpdate {
-  x @1 :Float32;
-  y @2 :Float32;
-  angle @3 :Float16;
-  UID @3 :Uint16;
+  x @0 :Float32;
+  y @1 :Float32;
+  angle @2 :Float32;
+  uid @3 :UInt16;
 }
 
 struct VanishBullet {
-  UID @0 :Uint16;
+  uid @0 :UInt16;
 }
 
 struct HealthUpdate {
-  HP @0 :Uint8;
+  hp @0 :UInt8;
 }
 
 struct ServerUpdate {
