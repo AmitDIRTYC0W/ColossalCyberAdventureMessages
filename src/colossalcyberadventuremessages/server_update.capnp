@@ -6,7 +6,17 @@ struct ChatMessage {
 }
 
 struct EntityUpdate {
+  enum EntityType {
+    player @0;
+    slime @1;
+    skeleton @2;
+    archer @3;
+    bullet @4;
+  }
+
+
   id @0 :UInt16;
+  type @3 :EntityType;
   x @1 :Float32;
   y @2 :Float32;
 }
