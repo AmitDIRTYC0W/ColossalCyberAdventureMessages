@@ -16,9 +16,9 @@ struct EntityUpdate {
 
 
   id @0 :UInt16;
-  type @3 :EntityType;
-  x @1 :Float32;
-  y @2 :Float32;
+  type @1 :EntityType;
+  x @2 :Float32;
+  y @3 :Float32;
 }
 
 struct BulletsUpdate {

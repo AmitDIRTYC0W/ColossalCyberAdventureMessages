@@ -10,7 +10,7 @@ struct Move {
 }
 
 struct Shot {
-  angle @0 :Float16;
+  angle @0 :Float32;
 }
 
 enum Weapon {
