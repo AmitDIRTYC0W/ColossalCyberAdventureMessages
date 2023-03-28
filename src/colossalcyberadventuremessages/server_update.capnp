@@ -33,7 +33,7 @@ struct VanishBullet {
 }
 
 struct HealthUpdate {
-  hp @0 :UInt8;
+  hp @0 :UInt16;
 }
 
 struct ServerUpdate {
