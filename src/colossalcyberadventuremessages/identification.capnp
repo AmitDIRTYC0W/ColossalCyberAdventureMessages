@@ -11,6 +11,7 @@ struct IdentificationResponse {
     invalidCredentials @0;
     userAlreadyLoggedIn @1;
     userBanned @2;
+    usernameTaken @3;
   }
 
   union {
