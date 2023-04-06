@@ -14,11 +14,25 @@ struct EntityUpdate {
     bullet @4;
   }
 
+  enum AnimationState {
+    idle @0;
+    walk @1;
+    attack @2;
+    death @3;
+  }
+
+  enum Direction {
+    left @0;
+    right @1;
+  }
+
 
   id @0 :UInt16;
   type @1 :EntityType;
-  x @2 :Float32;
-  y @3 :Float32;
+  animation_state @2 :AnimationState;
+  direction @3 :Direction;
+  x @4 :Float32;
+  y @5 :Float32;
 }
 
 struct BulletsUpdate {
