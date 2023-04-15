@@ -29,7 +29,7 @@ struct EntityUpdate {
 
   id @0 :UInt16;
   type @1 :EntityType;
-  animation_state @2 :AnimationState;
+  animationstate @2 :AnimationState;
   direction @3 :Direction;
   x @4 :Float32;
   y @5 :Float32;
