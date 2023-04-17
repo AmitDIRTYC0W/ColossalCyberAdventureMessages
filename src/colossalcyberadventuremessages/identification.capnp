@@ -6,6 +6,10 @@ struct IdentificationRequest {
   register @2 :Bool;
 }
 
+struct SuccessInformation {
+  playerid @0 :UInt16;
+}
+
 struct IdentificationResponse {
   enum FailureReason {
     invalidCredentials @0;
@@ -18,7 +22,7 @@ struct IdentificationResponse {
     failure :group {
       reason @0 :FailureReason;
     }
-    success @1 :Void;
+    success @1 :SuccessInformation;
   }
 }
 
