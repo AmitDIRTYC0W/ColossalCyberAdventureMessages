@@ -12,6 +12,7 @@ struct EntityUpdate {
     skeleton @2;
     archer @3;
     bullet @4;
+    coin @5;
   }
 
   enum AnimationState {
