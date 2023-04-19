@@ -8,7 +8,7 @@ struct IdentificationRequest {
 
 struct SuccessInformation {
   playerid @0 :UInt16;
-  coin_amount @1 :UInt16;
+  coinamount @1 :UInt16;
 }
 
 struct IdentificationResponse {
