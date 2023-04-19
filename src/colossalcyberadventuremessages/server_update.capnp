@@ -51,6 +51,15 @@ struct HealthUpdate {
   hp @0 :UInt16;
 }
 
+struct ItemAdditionUpdate {
+  enum Item{
+    coin @0;
+    mushroom @1;
+  }
+
+  item @0 :Item;
+}
+
 struct ServerUpdate {
   union {
     chatMessage @0 :ChatMessage;
