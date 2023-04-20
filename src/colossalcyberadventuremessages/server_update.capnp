@@ -67,5 +67,6 @@ struct ServerUpdate {
     bulletsUpdate @2 :List(BulletsUpdate);
     vanishBullet @3 :List(VanishBullet);
     healthPoints @4 :HealthUpdate;
+    itemAdditionUpdate @5 :ItemAdditionUpdate;
   }
 }
