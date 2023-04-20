@@ -57,6 +57,7 @@ struct ItemAdditionUpdate {
   enum Item{
     coin @0;
     mushroom @1;
+    xp @2;
   }
 
   item @0 :Item;
