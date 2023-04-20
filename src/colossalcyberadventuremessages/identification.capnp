@@ -10,7 +10,7 @@ struct SuccessInformation {
   playerid @0 :UInt16;
   coinamount @1 :UInt16;
   xpamount @2 :UInt16;
-  mushroomamount @3 :Uint16;
+  mushroomamount @3 :UInt16;
 }
 
 struct IdentificationResponse {
