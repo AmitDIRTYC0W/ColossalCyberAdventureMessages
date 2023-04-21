@@ -51,7 +51,7 @@ struct VanishBullet {
 }
 
 struct HealthUpdate {
-  hp @0 :UInt16;
+  hp @0 :Int16;
 }
 
 struct ItemAdditionUpdate {
