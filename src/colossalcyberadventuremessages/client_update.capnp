@@ -31,6 +31,6 @@ struct ClientUpdate {
     shot @2 :Shot;
     changeWeapon @3 :Weapon;
     useSkill @4 :UInt8;
-#    useItem @5 :UseItem;
+    useItem @5 :UseItem;
   }
 }
