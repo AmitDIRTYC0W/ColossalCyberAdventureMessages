@@ -20,8 +20,8 @@ enum Weapon {
   shotgun @2;
 }
 
-struct UseItem {
- mushroom @0;
+enum UseItem {
+  mushroom @0;
 }
 
 struct ClientUpdate {
@@ -31,6 +31,6 @@ struct ClientUpdate {
     shot @2 :Shot;
     changeWeapon @3 :Weapon;
     useSkill @4 :UInt8;
-    useItem @5 :UseItem;
+#    useItem @5 :UseItem;
   }
 }
