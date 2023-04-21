@@ -11,6 +11,7 @@ struct SuccessInformation {
   coinamount @1 :UInt16;
   xpamount @2 :UInt16;
   mushroomamount @3 :UInt16;
+  hpamount @4 :Int16;
 }
 
 struct IdentificationResponse {
