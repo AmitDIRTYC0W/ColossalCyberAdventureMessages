@@ -20,6 +20,10 @@ enum Weapon {
   shotgun @2;
 }
 
+struct UseItem {
+ mushroom @0;
+}
+
 struct ClientUpdate {
   union {
     chatMessage @0 :ChatMessage;
@@ -27,5 +31,6 @@ struct ClientUpdate {
     shot @2 :Shot;
     changeWeapon @3 :Weapon;
     useSkill @4 :UInt8;
+    useItem @5 :UseItem;
   }
 }
