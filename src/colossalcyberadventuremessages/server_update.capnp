@@ -62,7 +62,7 @@ struct ItemAdditionUpdate {
   }
 
   item @0 :Item;
-  change @1 :Int16;
+  amount @1 :Int16;
 }
 
 struct ServerUpdate {
